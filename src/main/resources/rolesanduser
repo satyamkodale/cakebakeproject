@@ -1,0 +1,29 @@
+ here we are not inserting users via application so we are inserting users manually
+ 
+ mysql> insert into roles(id, name)values(1,"ROLE_ADMIN"),(2,"ROLE_USER");
+ 
+ here know we are inserting admin now bcoz we are not creating any master admin  and master password to create and manage admins
+ if we want to to add master admin then we need cms who controls admin and user which is 3 step process 
+ 
+ 
+ insert into users(id,email,password,first_name,last_name) values(1,'admin@gmail.com','$2a$10$moTjfAVBJzNS32q7NPPVh.iAGDbZSkjZJBkdxT5ZLKQ3R1Vh/y9Fi','Admin','gupta');
+ 
+ 
+ 
+ password is 123456
+ 
+ insert into user_role(user_id,role_id) values (1,1),(1,2);
+ 
+ 
+ 
+ to view cart functionality view glbaldata calss
+  cart controller
+  and 
+  
+  to manage login cart 
+  
+  we have done 
+  
+  GlobalData.cart.clear();
+  in login controller
+ 
